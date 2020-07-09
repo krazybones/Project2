@@ -4,18 +4,26 @@ $(document).ready(function(){
 //scrollspy addition attempt
     $('body').scrollspy({ target: '#scrollspy' });
 
-//ajax call
+//ajax asynchronize call
     console.log("document ready...");
     $('#submit').click(function() {
         var url = "http://api.giphy.com/v1/gifs/search";
         var data = $('#myForm').serialize();
-        console.log(data)
+        console.log(data);
         $.ajax( {
             type: "GET",
             url: url,
             data: data,
-            success: function() {
+            success: function(data) {
                 console.log("received data");
+                var output = "";
+                $.each(data.data, function (key, obj) { 
+                    var id = obj.id;
+                    var type = obj.type;
+                    var imgSrc = "https://media2.giphy.com/media/"+obj.id+"/giphy."+obj.type;
+                    output += "<div><img class='answer d-flex flex-fill flex-wrap align-items-center' src='"+imgSrc+"' /></div>\n"
+                });
+                
             }
         });
     });

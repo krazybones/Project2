@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Bootstrap CDN Links -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <!-- Local CSS Link -->
         <link rel="stylesheet" href="css/stylesheet.css">
         <!-- Links -->
@@ -16,8 +15,13 @@
         <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
 
         <title>Fetch! The GiF Search Engine</title>
-        <!-- Boostrap Styling -->
-        <div class="container">
+
+        
+    </head>
+
+   <body>
+       <!-- Boostrap Styling -->
+       <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                 <a class="navbar-brand"><img class="img-thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTNITqLAUq6mjt5qTSM9lO9lzYyBHrUul95JA&usqp=CAU" alt="logo" width="50" height="50" class="d-inline-block align-top" alt="logo">Fetch!</a>
                 <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,22 +41,8 @@
                     </ul>
                 </div>
             </nav>
-        </div>
-    </head>
+    
 
-   <body>
-
-        <script>
-            $(document).ready(function() {
-                console.log("document ready...");
-                $('#submit').click(function() {
-                    console.log("submit clicked");
-                    $('#outputArea').html("submit clicked");
-                });
-            });
-        </script>
-
-        <div class="container">
             <form class="fetch centered" action="action_page.php" id="myForm">
                 <input type="text" placeholder="Go Fetch!" name="q" id="search" />
                 <input type="hidden" name="api_key" value="4dfI4W9QgUypon3fgxvDqTy7j0Q8hk1w" />
@@ -67,7 +57,7 @@
         <div data-spy="scroll" data-target="#scrollspy" data-offset="0"></div>
         
         <!-- Bootstrap, jQuery, & js Links -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     

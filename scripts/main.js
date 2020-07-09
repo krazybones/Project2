@@ -1,36 +1,28 @@
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
-});
 
 //scrollspy addition attempt
-$(document).ready(function() {
     $('body').scrollspy({ target: '#scrollspy' });
-});
 
-$(document).ready(function() {
+//ajax call
     console.log("document ready...");
     $('#submit').click(function() {
-        console.log("submit clicked");
-        $('#outputArea').html("submit clicked");
+        var url = "http://api.giphy.com/v1/gifs/search";
+        var data = $('#myForm').serialize();
+        console.log(data)
+        $.ajax( {
+            type: "GET",
+            url: url,
+            data: data,
+            success: function() {
+                console.log("received data");
+            }
+        });
     });
 });
 
 
 
-//after checking buttong for functionality
-//replace below code into line 10:
-
-//var url = "http://api.giphy.com/v1/gifs/search";
-//var data = $('#myForm').serialize();
-//console.log(data)
-//$.ajax( {
-    //type: "GET",
-    //url: url,
-    //data: data,
-    //success: function() {
-        //console.log("received data");
-   // };
-//});
 
 //$(document).ready(function(){
     //$('#submit').click(function () { 

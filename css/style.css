@@ -15,15 +15,15 @@ head, body {
 }
 
 footer {
-    align-self: center;
-    justify-content: center;
     font-size: small;
+    text-align: center;
 }
 
 hr {
     border-top: 1px dotted red;
 }
 
+/* Image styles */
 .row {
     display: -ms-flexbox; /* IE10 */
     display: flex;
@@ -74,8 +74,8 @@ form.fetch::after {
 }
 
 /* If the screen size is 320px wide or less */
-/*@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 320px) {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
-}*/
+}

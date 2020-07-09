@@ -2,9 +2,6 @@ $(document).ready(function(){
     //tooltip settings
     $('[data-toggle="tooltip"]').tooltip();   
 
-    //scrollspy addition attempt
-    $('body').scrollspy({ target: '#scrollspy' });
-
     //ajax asynchronize call
     console.log("document ready...");
     $('#submit').click(function() {
@@ -26,7 +23,7 @@ $(document).ready(function(){
                     output += "<div><img class='answer d-flex' src='"+imgSrc+"' /></div>\n" //create output and assign img tag for gifs
                 });
                 console.log(output);
-                $("#scrollspy").html(output); //get output
+                $("#outputArea").html(output); //get output
             }
         });
     });

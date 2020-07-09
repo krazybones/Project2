@@ -1,0 +1,61 @@
+/* Add the font */
+head, body {
+    font-family: 'Alata';font-size: 22px;
+}
+
+/* Page Styling */
+head, body {
+    background-color: seashell;
+}
+
+.centered {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+footer {
+    align-self: center;
+    justify-content: center;
+}
+
+/* Style the search field */
+form.fetch input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid black;
+    float: left;
+    width: 80%;
+    background: whitesmoke;
+}
+  
+/* Style the submit button */
+form.fetch button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background:lightsalmon;
+    color: white;
+    font-size: 17px;
+    border: 1px solid black;
+    border-left: none;
+    cursor: pointer;
+}
+  
+form.fetch button:hover {
+    background: lightsalmon;
+}
+  
+/* Clear floats */
+form.fetch::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* If the screen size is 320px wide or less */
+@media only screen and (max-width: 320px) {
+    .responsive {
+        width: 100%;
+      }
+}

@@ -14,9 +14,7 @@
         <!--Google Font  link -->
         <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
 
-        <title>Fetch! The GiF Search Engine</title>
-
-        
+        <title>Fetch! The GiF Search Engine</title> 
     </head>
 
    <body>
@@ -42,16 +40,25 @@
                 </div>
             </nav>
     
-
-            <form class="fetch centered" id="myForm">
+            <form class="fetch centered" id="myForm"> 
                 <input type="text" placeholder="Go Fetch!" name="q" id="search" />
                 <input type="hidden" name="api_key" value="4dfI4W9QgUypon3fgxvDqTy7j0Q8hk1w" />
                 <button type="button" class="btn" id="submit" data-toggle="tooltip" title="Search Away!"><i class="fa fa-search"></i></button>
                 <span></span>
-            </form>
+            </form> 
+            
+            
         </div>
 
-        <div class="flexContainer responsive" id="scrollspy"></div>
+        <hr>
+
+        <div class="responsive" id="scrollspy"></div>
+
+        <footer>
+            <div class="d-flex align-items-center">
+            <p><a href="#myForm">Back to the top</a></p> 
+            </div>
+        </footer>
 
         <!-- Scrollspy addition attempt -->
         <div data-spy="scroll" data-target="#scrollspy" data-offset="0"></div>
@@ -64,7 +71,5 @@
         <!-- Local JS Link -->
         <script src="scripts/main.js"></script>
     </body>
-
-    
 </html>
 

@@ -1,10 +1,11 @@
 $(document).ready(function(){
+    //tooltip settings
     $('[data-toggle="tooltip"]').tooltip();   
 
-//scrollspy addition attempt
+    //scrollspy addition attempt
     $('body').scrollspy({ target: '#scrollspy' });
 
-//ajax asynchronize call
+    //ajax asynchronize call
     console.log("document ready...");
     $('#submit').click(function() {
         var url = "http://api.giphy.com/v1/gifs/search";
@@ -18,12 +19,14 @@ $(document).ready(function(){
                 console.log("received data");
                 var output = "";
                 $.each(data.data, function (key, obj) { 
+                    //id, type, and url converted to variables
                     var id = obj.id;
                     var type = obj.type;
-                    var imgSrc = "https://media2.giphy.com/media/"+obj.id+"/giphy."+obj.type;
-                    output += "<div><img class='answer d-flex flex-fill flex-wrap align-items-center' src='"+imgSrc+"' /></div>\n"
+                    var imgSrc = "https://media2.giphy.com/media/"+obj.id+"/giphy."+obj.type; //feed url + id + type
+                    output += "<div><img class='answer d-flex flex-fill flex-wrap align-items-center' src='"+imgSrc+"' /></div>\n" //create output and assign img tag for gifs
                 });
-                
+                console.log(output);
+                $("#scrollspy").html(output); //get output
             }
         });
     });

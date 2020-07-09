@@ -23,7 +23,7 @@ $(document).ready(function(){
                     var id = obj.id;
                     var type = obj.type;
                     var imgSrc = "https://media2.giphy.com/media/"+obj.id+"/giphy."+obj.type; //feed url + id + type
-                    output += "<div><img class='answer d-flex flex-fill flex-wrap align-items-center' src='"+imgSrc+"' /></div>\n" //create output and assign img tag for gifs
+                    output += "<div><img class='answer d-flex' src='"+imgSrc+"' /></div>\n" //create output and assign img tag for gifs
                 });
                 console.log(output);
                 $("#scrollspy").html(output); //get output

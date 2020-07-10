@@ -25,18 +25,24 @@ hr {
 
 /* Image styles */
 .row {
-    display: -ms-flexbox; /* IE10 */
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
     padding: 0 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .column {
-    -ms-flex: 25%; /* IE10 */
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
+}
+
+#outputArea {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Style the search field */
@@ -75,7 +81,8 @@ form.fetch::after {
 
 /* If the screen size is 320px wide or less */
 @media only screen and (max-width: 320px) {
-    -ms-flex: 100%;
+   body {
     flex: 100%;
     max-width: 100%;
+   }
 }

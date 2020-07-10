@@ -9,23 +9,36 @@ head, body {
   background-color: seashell;
 }
 
-.centered {
-  position: absolute;
-  top: 30%;
-  left: 40%;
-}
-
 footer {
   font-size: small;
   text-align: center;
 }
 
 hr {
-  border-top: 1px dotted red;
+  border: none;
+  border-top: 3px double #333;
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+hr:after {
+  background: #fff;
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+
+/* Form styles */
+.fetch {
+  padding-top: 8%;
+  margin: 0 auto;
+  width: 40%;
 }
 
 /* Image styles */
-.row {
+.row_grid {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
@@ -33,12 +46,6 @@ hr {
   margin-bottom: 5px;
   margin-left: 5px;
   margin-right: 5px;
-}
-
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
 }
 
 #outputArea {

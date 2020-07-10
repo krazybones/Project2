@@ -20,7 +20,7 @@ $(document).ready(function(){
                     var id = obj.id;
                     var type = obj.type;
                     var imgSrc = "https://media2.giphy.com/media/"+obj.id+"/giphy."+obj.type; //feed url + id + type
-                    output += "<div><img class='answer d-flex height='50' width='auto'' src='"+imgSrc+"' /></div>\n" //create output and assign img tag for gifs
+                    output += "<div class='row row_grid'><img class='answer d-flex height='100' width='100' src='"+imgSrc+"' /></div>\n" //create output and assign img tag for gifs
                 });
                 console.log(output);
                 $("#outputArea").html(output); //get output
@@ -28,26 +28,3 @@ $(document).ready(function(){
         });
     });
 });
-
-
-
-
-//$(document).ready(function(){
-    //$('#submit').click(function () { 
-        ///=let userInput = $('#search').val()
-        //alert(userInput);
-        //$.ajax({
-           // url: "http://api.giphy.com/v1/gifs/search?q=martin+lawrence&api_key=4dfI4W9QgUypon3fgxvDqTy7j0Q8hk1w&limit=50",
-       // })
-            //.done((res)=>{
-                //let gifs = res.Search;
-               // $.each(gifs, function (i, e) { 
-                    //let images = e.images
-                    //console.log("images", images)
-                    //$("body").append(`<img src="${images}" alt="gif"/>`)
-               // });
-                //console.log("res", res.Search)
-           // })
-   // });
-//});
-
